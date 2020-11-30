@@ -11,6 +11,8 @@ This code is meant to compliment a small, open-source PCB I've designed to plug 
 Hardware
 --------
 
+https://oshpark.com/shared_projects/awK3IgN7
+
 The hardware is untested as of yet, even by myself, as the modules they are built around are not yet widely available for public consumption. I managed to get my hands on some engineering samples, however, and I'm just waiting on the prototype pcbs to be delivered.
 
 Schematic
@@ -18,7 +20,7 @@ Schematic
 
 I will post the schematic once I've verified that it actually  works. As is, it's stupidly simple and many of you could probably work it out for yourselves. But in essence, all my circuit is really doing smoothing voltage spikes is dropping 5v to 3.3v to drive the module and routing some traces.
 
-The ESP modules aren't too picky about voltage, but 5v is way too much. Anything between 3.0 and 3.6 should be sufficient. These are very low power devices, so I'm gamling on a simple voltage divider doing the job.
+The ESP modules aren't too picky about voltage, but 5v is way too much. Anything between 3.0 and 3.6 should be OK. These are very low power devices, so I'm gamling on a simple voltage divider doing the job.
 
 
 
@@ -34,9 +36,9 @@ The BOM
 * 1 0603 10k resistor
 
 1: These actually aren't  available for public consumption just yet. I managed to snag a handful of engineering samples, but I have not put my hands on one yet.
-2: This is a placeholder value for now, I might need to apply some resistance in the end. But don't just jump the pads, there are traces running between them.
+2: This is a placeholder value for now, I might need to apply some resistance in the end. But don't just bridge the pads, there are traces running between them.
 
-That's it. If you're in the US and ordering PCBs from OSHPark and parts from DigiKey, your total cost to build three boards should be well under $20 -- **with shipping**. 
+That's it. If you're in the US and ordering PCBs from OSHPark and parts from DigiKey, your total cost to build three boards should be well under $20 -- **with shipping**.
 
 And I do recommend ordering these from OSHPark -- the ENIG finish should be better than HASL for soldering the QFN56 package as well as for making good contact with the controller port pins. 
 
