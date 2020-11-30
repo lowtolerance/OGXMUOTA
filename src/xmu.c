@@ -1,4 +1,3 @@
-#include "tusb.h"
 #include "xid_xmu.h"
 
 void xmu_init()
