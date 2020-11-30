@@ -1,24 +1,9 @@
-#ifndef XID_XMU_H_
-#define XID_XMU_H_
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
 #include <stdint.h>
-#include "tusb.h"
 
-#if defined(__IMXRT1062__) && defined(USE_EXT_FLASH)
 #define MSC_BLOCK_SIZE 4096
-#define FLASH_CHIP_SIZE (1024 * 1024 * 16) //FIXME: Autodetect from Flash ID
+#define FLASH_CHIP_SIZE (1024 * 1024 * 4) //FIXME: Autodetect from Flash ID
 #define MSC_BLOCK_NUM (FLASH_CHIP_SIZE / MSC_BLOCK_SIZE)
 #define PAGE_SIZE 256
-#else
-//256k internal RAM usage
-#define MSC_BLOCK_SIZE 512
-#define MSC_BLOCK_NUM 512
-#endif
 
 static const tusb_desc_device_t XMU_DESC_DEVICE =
     {
@@ -84,9 +69,3 @@ static const uint8_t XMU_DESC_CONFIGURATION[] =
 };
 
 bool flash_init();
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif

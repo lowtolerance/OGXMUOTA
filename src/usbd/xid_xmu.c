@@ -1,26 +1,12 @@
-#include <Arduino.h>
 #include "tusb.h"
 #include "device/usbd_pvt.h"
 #include "xid_xmu.h"
-#include "printf.h"
 
-#if (XID_XMU >= 1)
 
-#if defined(USE_EXT_FLASH) && !defined(__IMXRT1062__)
-#error To use external flash, you must be using a Teensy4 or 4.1
-#endif
-
-#if defined(__IMXRT1062__) && defined(USE_EXT_FLASH)
 static int32_t flash_read(uint32_t block, uint32_t offset, void *buf, uint32_t size);
 static int32_t flash_program(uint32_t block, uint32_t offset, const void *buf, uint32_t size);
 static int32_t flash_erase(uint32_t block);
 static int32_t flash_wait(uint32_t microseconds);
-#else
-#ifndef DMAMEM
-#define DMAMEM
-#endif
-static DMAMEM uint8_t msc_ram_disk[MSC_BLOCK_SIZE * MSC_BLOCK_NUM];
-#endif
 
 uint8_t const *tud_descriptor_device_cb(void)
 {
