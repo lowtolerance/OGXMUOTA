@@ -1,8 +1,8 @@
 ref qty desc    msn
 IC1 1   ESP32-S2-MINI-1 module  ESP32-S2-MINI-1
-R1  1   1k 0603 resistor 
-R2  1   2k 0603 resistor
-R3  1   10k 0603 resistor
-R4  2   0 ohm 0603 resistor
-C1  2   0.1u 0603 capacitor
-C2  1   22u 0603 capacitor
+R1  1   1k 0603 resistor    
+R2  1   2k 0603 resistor    
+R3  1   10k 0603 resistor   
+R4  2   0 ohm 0603 resistor 
+C1  2   0.1u 0603 capacitor 
+C2  1   22u 0603 capacitor  
