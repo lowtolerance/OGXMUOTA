@@ -1,8 +1,8 @@
-References	 Quantity	 Description	 Digikey
-IC1	 1	 ESP32-S2-MINI-1 module	 1965-ESP32-S2-MINI-1-ND 
-R1	 1	 1k 0603 resistor	 RMCF0603JJ1K00CT-ND    
-R2	 1	 2k 0603 resistor	 311-2.00KHRCT-ND
-R3	 1	 10k 0603 resistor	 RNCP0603FTD10K0CT-ND  
-R4-R5	 2	 0 ohm 0603 resistor	 311-0.0HRCT-ND
+References	 Quantity	 Description	 PartNumber 
+IC1	 1	 ESP32-S2-MINI-1 module	 ESP32-S2-MINI-1
+R1	 1	 1k 0603 resistor	 ERA-3AEB102V    
+R2	 1	 2k 0603 resistor	 ERA-3AEB202V
+R3	 1	 10k 0603 resistor	 RNCP0603FTD10K0  
+R4-R5	 2	 0 ohm 0603 resistor	 RC0603FR-070RL‎
 C1-C2	 2	 0.1uF 0603 capacitor	 CL10B104KB8NNNL
-C3	 1	 22uF 0603 capacitor	 1276-1274-1-ND
+C3	 1	 22uF 0603 capacitor	 ‎CL10A226MP8NUNE
